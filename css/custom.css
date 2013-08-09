@@ -12,15 +12,13 @@ body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  /* Negative indent footer by its height */
-  margin: 0 15px -60px;
-  /* Pad bottom by footer height */
+  margin: 0 0 -70px;
   padding: 0 0 70px;
 }
 
 /* Set the fixed height of the footer here */
 #footer {
-  height: 60px;
+  height: 70px;
   background-color: #c9c9c9;
   min-width: 550px;
 }

@@ -28,6 +28,9 @@ body {
   margin-top: 60px;
 }
 
+.carousel{
+  margin-bottom: 20px;
+}
 .carousel img {
   border-radius: 5px;
 }

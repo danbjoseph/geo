@@ -11,13 +11,33 @@
 	    <link href="../../css/custom.css" rel="stylesheet">
 	    <link rel="shortcut icon" href="../../img/favicon.png">
 
+      <style>
+
+      .modal-dialog {
+        width: 80%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+
+      .modal-content {
+        background-color: #eeeeee;
+      }
+
+      .thumbnail:hover {
+        text-decoration: none;
+      }
+
+      </style>
+
+
+
  	</head>
 
   <body>
   	<div id="wrap">
 
   		<div id="phoneNumber">
-        <img src="../../img/close.gif" onClick="closePhoneNumber();" class="close" alt="close" />
+        <img src="../../img/close.gif" onClick="closePhoneNumber();" class="phoneclose" alt="close" />
         <p>Cell:  757-869-2447</p>
         <p>Skype:  danielbjoseph</p> 
       </div>     
@@ -27,51 +47,82 @@
             <h2><b>Geospatial</b></h2>
           </div>  
         
+<div id="myModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <p class="modal-title"> </p>
+      </div>
+      <div class="modal-body"></div>       
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
-        <!--  Carousel -->
-        <div id="my-carousel" class="carousel">
-        <a id="homeBtn" class="btn btn-default" href="../../#"><span class="glyphicon glyphicon-chevron-left"></span> Home</a>
-        <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#my-carousel" data-slide-to="1"></li>
-            <li data-target="#my-carousel" data-slide-to="2"></li>
-            <li data-target="#my-carousel" data-slide-to="3"></li>
-          </ol>
-        <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-             <img src="http://placehold.it/1280x720/35586C/" alt="alt_text" />
-              <div class="carousel-caption">
-                <p>Pede gravida pulvinar praesent viverra aptent nibh aliquet volutpat mollis sociis imperdiet, donec eleifend lorem non tempus auctor. Sodales, aliquet purus egestas Maecenas et fusce litora. Conubia morbi senectus ultrices. Nisi vulputate et malesuada vulputate gravida libero mi ornare, ornare eget lobortis nec nunc dis leo sit curabitur venenatis risus.</p>
-              </div>
+    <div class="container">
+      <div class="row" style="margin-bottom:30px;">
+        <div class="col-sm-3">
+          <a onclick="callModal(this);" class="thumbnail">
+            <img src="img/GDPC_EngagementMap_FY2013_thumb.png" alt="">
+            <div class="caption">            
+              <h4><small>Produced for American Red Cross</small></h4>        
             </div>
-            <div class="item">            
-              <img src="http://placehold.it/1280x720/35586C/" alt="alt_text" />
-              <div class="carousel-caption">
-                <p>Leo, taciti litora hac nec et nulla Erat duis tristique lobortis mollis volutpat cum luctus, parturient velit nostra nulla vestibulum ornare et tempus inceptos dapibus vehicula consectetuer augue torquent nisl.</p>              
-              </div>
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a onclick="callModal(this);" class="thumbnail">
+            <img src="img/UniversityPark_thumb.png" alt="">
+            <div class="caption">            
+              <h4><small>Produced for University Park, MD</small></h4>        
             </div>
-            <div class="item">
-              <img src="http://placehold.it/1280x720/35586C/" alt="alt_text" />            
-              <div class="carousel-caption">
-                <p>Euismod. Hac non purus fringilla fermentum. Leo maecenas sociis mus odio et. Non nec consequat justo condimentum purus curae; magna curae; auctor. Pharetra class ipsum fringilla Tortor ante est non.</p>             
-              </div>
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a onclick="callModal(this);" class="thumbnail">
+            <img src="img/communityFieldwork_thumb.png" alt="">
+            <div class="caption">            
+              <h4><small>Community fieldwork in the Philippines</small></h4>        
             </div>
-            <div class="item">
-              <img src="http://placehold.it/1280x720/35586C/" alt="alt_text" />
-              <div class="carousel-caption">
-                <p>Luctus. Arcu sociis massa. Lacus nec. Facilisi luctus nam egestas elit quam potenti, vestibulum, enim parturient curabitur cursus natoque. Suspendisse magna quisque. Magnis, phasellus luctus vulputate pulvinar, lacinia. Parturient, eget.</p>
-              </div>
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a onclick="callModal(this);" class="thumbnail">
+            <img src="img/CulasiForclimFlores_thumb.png" alt="">
+            <div class="caption">            
+              <h4><small>Produced for Culasi, Antique</small></h4>        
             </div>
-          </div><!-- .carousel-inner -->
-          <!-- Controls -->
-          <a class="carousel-control left" href="#my-carousel" data-slide="prev"></a>
-          <a class="carousel-control right" href="#my-carousel" data-slide="next"></a>
-        </div><!-- .carousel -->
-        <!-- end carousel -->	
-        
-		  </div>
+          </a>
+        </div>
+      </div> <!-- /row -->
+      <div class="row">
+        <div class="col-sm-3">
+          <a onclick="callModal(this);" class="thumbnail">
+            <img src="img/Culasi_LipataLULC_thumb.png" alt="">
+            <div class="caption">            
+              <h4><small>Produced for Culasi, Antique</small></h4>        
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a onclick="callModal(this);" class="thumbnail">
+            <img src="img/geog484_lesson8_thumb.png" alt="">
+            <div class="caption">            
+              <h4><small>Academic Assignment</small></h4>        
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a onclick="callModal(this);" class="thumbnail">
+            <img src="img/geog483_d1_thumb.png" alt="">
+            <div class="caption">            
+              <h4><small>Academic Assignment</small></h4>        
+            </div>
+          </a>
+        </div>
+      </div> <!-- /row  -->      
+    </div><!--/container-->
+
+		</div>
     </div>
 		<div id="footer"> 
   	<div class="container">        
@@ -93,6 +144,7 @@
   <!-- all compiled plugins -->
   <script src="../../js/bootstrap.min.js"></script>
 	<script src="../../js/main.js"></script>
+
   	
   </body>  
 </html>

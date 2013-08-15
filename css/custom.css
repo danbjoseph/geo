@@ -37,6 +37,9 @@ body {
 .carousel-control {
   border-radius: 5px;
 }
+.carousel-indicators {
+  width: 170px;
+}
 
 #homeBtn {
   position: absolute;
@@ -175,7 +178,7 @@ h2 {
   box-shadow: 3px 3px 12px #888888;
   z-index:1000;
 }
-.close {
+.phoneclose {
   float: right;
   margin: -17px -17px 0 0;
   cursor: pointer;

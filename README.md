@@ -1,2 +1,2 @@
 Personal website:
-http://danbjoseph.github.io/geo
+http://danbjoseph.github.io

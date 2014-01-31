@@ -1,0 +1,185 @@
+html,
+body {
+  height: 100%;
+  max-height: 100%;
+  background-color: #6f6f6f;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 0 -70px;
+  padding: 0 0 70px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 70px;
+  background-color: #c9c9c9;
+  min-width: 550px;
+}
+
+.jumbotron {
+  background-color: #d4d4d4;
+  margin-top: 60px;
+}
+
+.carousel{
+  margin-bottom: 20px;
+}
+.carousel img {
+  border-radius: 5px;
+}
+.carousel-control {
+  border-radius: 5px;
+}
+.carousel-indicators {
+  width: 170px;
+}
+
+#homeBtn {
+  position: absolute;
+  top: 4px;
+  left: 4px;  
+  z-index: 1000;
+  border-radius: 5px;
+  background-color: rgba(50, 50, 50, 0.3);
+  border: none;
+}
+
+.carousel-caption {
+  right: 10%;
+  left: 10%;
+  padding: 20px;
+  padding-bottom: 25px;
+  border-radius: 5px;
+  color: #ebebeb;
+  background-color: rgba(50, 50, 50, 0.6); 
+}
+
+h2 {
+  color: #202C34;
+}
+
+.btn {
+  color: #d4d4d4;
+}
+
+.col-lg-4 .btn span {
+  margin-right: 5px;
+  margin-left: 20px;
+}
+
+.social-list a:link, .social-list a:visited {
+    color: #5a5a5a;
+    cursor: pointer;
+}
+
+.social-list {
+  float:right;
+  margin: 20px;
+}
+
+.social-list li {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.social-list span {
+  float: left;
+}
+
+.social-list li.email span {
+  background: url("../img/email_grey.png");
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 25px;
+}
+
+.social-list li.email a:hover span {
+  background: url("../img/email_color.png");
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 25px;
+}
+
+.social-list li.linkedin span {
+  background: url("../img/linkedin_grey.png");
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 25px;
+}
+
+.social-list li.linkedin a:hover span {
+  background: url("../img/linkedin_color.png");
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 25px;
+}
+
+.social-list li.twitter span {
+  background: url("../img/twitter_grey.png");
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 25px;
+}
+
+.social-list li.twitter a:hover span {
+  background: url("../img/twitter_color.png");
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 25px;
+}
+
+.social-list li.phone span {
+  background: url("../img/phone_grey.png");
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.social-list li.phone a:hover span {
+  background: url("../img/phone_color.png");
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 25px;
+}
+
+.social-list li.facebook span {
+  background: url("../img/facebook_grey.png");
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.social-list li.facebook a:hover span {
+  background: url("../img/facebook_color.png");
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 25px;
+}
+
+#phoneNumber {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  display: none;
+  padding: 20px;
+  width: 250px;
+  border: 1px solid #fff;
+  background-color: #ababab;
+  /*color: #626262;*/
+  box-shadow: 3px 3px 12px #888888;
+  z-index:1000;
+}
+.phoneclose {
+  float: right;
+  margin: -17px -17px 0 0;
+  cursor: pointer;
+}

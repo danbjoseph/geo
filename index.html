@@ -1,198 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Dan Joseph</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/blueimp-gallery.min.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
     <style type="text/css">
       html, body {
-        font-size: 0;
-        background-color: #1a1a1a;      
+        background-color: #272727;     
       }
-      h1, h6 {
-        color: #d7d7d7;      
+      h1 {
+        color: #d7d7d7;
       }
-      .blueimp-gallery>.prev, .blueimp-gallery>.next {
-        border-width: 0;
-        background: none;
-        font-size: 30px;
+      .navbar-custom {
+        background-color: #272727;
       }
-      .thumbnailGallery img {
-        margin-top: 2px;
-        margin-right: 2px;
-        height: 80px;
-        width: 80px;
+      .block1 {  
+        background: url("http://placehold.it/1680x800/30657a&text=a+step+above+lorem+ipsum") no-repeat center center fixed !important; 
+        height: 250px;
       }
-      .sectionHeader {
-        border-top: solid 1px #6d6e70;
-        padding-top: 4px;
-        margin-top: 8px;
+      .block2 {
+        background: url("http://placehold.it/1680x800/30657a&text=location+various") no-repeat center center fixed !important;
+        height: 300px; 
       }
+      .socialBar {
+        margin: 18px 0 10px 0;
+      }
+      .socialBar div {
+        width: 48px;
+        height: 48px;
+        display: inline-block;
+        border-radius: 5px;
+      }
+      .socialBar div:hover {
+        background-color: #e8e8e8;
+      }
+      .socialBar .email {
+        background: url("img/contact.png") 0 0;
+      }
+      .socialBar .twitter {
+        background: url("img/contact.png") -96px 0;
+      }
+      .socialBar .skype {
+        background: url("img/contact.png") -144px 0;
+      }
+      .socialBar .github {
+        background: url("img/contact.png") -48px 0;
+      }
+      .socialBar .linkedin {
+        background: url("img/contact.png") -192px 0;
+      }
+      .footerBar {
+        color: #d7d7d7;
+      } 
 
 
     </style>
 
   </head>
   <body>
+
+    <div class="headerBar">
+      <div class="container">
+        <div style="display:inline-block;">
+          <h1>Dan Joseph</h1>
+        </div>        
+        <div class="socialBar pull-right">
+          <a href="mailto:danbjoseph@gmail.com" target="_blank" title="danbjoseph@gmail.com"><div class="email"></div></a>
+          <a href="http://twitter.com/danbjoseph" target="_blank" title="Twitter"><div class="twitter"></div></a>
+          <a href="skype:danielbjoseph?userinfo" title="Skype"><div class="skype"></div></a>
+          <a href="https://github.com/danbjoseph" target"_blank" title="GitHub"><div class="github"></div></a>
+          <a href="http://www.linkedin.com/in/danbjoseph/" target="_blank" title="Linkedin"><div class="linkedin"></div></a>
+        </div>
+      </div>
+    </div>
+    <div class="block1">
+    </div>
     <div class="container">
-    <div id="blueimp-gallery" class="blueimp-gallery">
-      <div class="slides"></div>
-      <h3 class="title"></h3>
-      <a class="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="next"><span class="glyphicon glyphicon-chevron-right" style="margin-left: -15px;"></span></a>
-      <a class="close"><span class="glyphicon glyphicon-remove"></span></a>
-      <a class="play-pause"></a>
-      <!-- <ol class="indicator"></ol> -->
+      <h1>Hello, world!</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-    <div class="header-text">
-      <h1>Dan Joseph</h1>
+    <div class="block2">
     </div>
-    <br>
-    <div class="sectionHeader">
-      <h6> I like making maps. I like data. </h6>
+    <div class="container">
+      <h1>Hello, world!</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-    <div id="maps" class="thumbnailGallery">
-      <a href="images/maps/IFRC_OpsOverview_20131226.png" title="text">
-        <img src="images/maps/IFRC_OpsOverview_20131226_thumb.jpg" alt="text">
-      </a>      
-      <a href="images/maps/Haiyan_Cash_ProvincesOverview_20140117.png" title="text">
-        <img src="images/maps/Haiyan_Cash_ProvincesOverview_20140117_thumb.jpg" alt="text">
-      </a>
-      <a href="images/maps/Cash_Tanauan_20140130.png" title="text">
-        <img src="images/maps/Cash_Tanauan_20140130_thumb.jpg" alt="text">
-      </a> 
-      <a href="images/maps/Cash_Leyte(eastern)Overview_A2_20140130.png" title="text">
-        <img src="images/maps/Cash_Leyte(eastern)Overview_A2_20140130_thumb.jpg" alt="text">
-      </a>
-      <a href="images/maps/MovementPartners_20140102.png" title="text">
-        <img src="images/maps/MovementPartners_20140102_thumb.jpg" alt="text">
-      </a> 
-      <a href="images/maps/ShelterSolutionDist_OrmocChapter_FrenchERU_20140120.png" title="text">
-        <img src="images/maps/ShelterSolutionDist_OrmocChapter_FrenchERU_20140120_thumb.jpg" alt="text">
-      </a> 
-      <a href="images/maps/Cash_Capiz_20140112.png" title="text">
-        <img src="images/maps/Cash_Capiz_20140112_thumb.jpg" alt="text">
-      </a>       
-      <a href="images/maps/RFL_FY12-13_20130820.png" title="text" class="A">
-        <img src="images/maps/RFL_FY12-13_20130820_thumb.jpg" alt="text">
-      </a> 
-      <a href="images/maps/RFL_Grant_Recipients_20130926.png" title="text" class="A">
-        <img src="images/maps/RFL_Grant_Recipients_20130926_thumb.jpg" alt="text">
-      </a> 
-      <a href="images/maps/VNM_TyphoonPaths_20131024.png" title="text">
-        <img src="images/maps/VNM_TyphoonPaths_20131024_thumb.jpg" alt="text">
-      </a>
-      <a href="images/maps/Latin_America_Programs_FY14_External_20131022.png" title="text">
-        <img src="images/maps/Latin_America_Programs_FY14_External_20131022_thumb.jpg" alt="text">
-      </a>
-  
-    </div>
-
-    <h6> I deployed to the Philippines as information management support for the <a href="http://www.ifrc.org/" target="_blank">IFRC</a> following Typhoon Haiyan (Yolanda).</h6>
-    <br>
-
-    <h6> I worked on environmental and planning projects in a rural municipality in the Philippines for two years.</h6>
-    <br>
-    
-    <div class="sectionHeader">
-      <h6>These are some things I like.</h6>
-    </div>
-    <div class="thumbnailGallery">
-      <a href="http://www.openstreetmap.org/" target="_blank" title="OpenStreetMap">
-        <img src="images/likes/osm.png" alt="OpenStreetMap">
-      </a>
-      <a href="http://www.meetup.com/Geo-DC/" target="_blank" title="Geo-DC Meetup">
-        <img src="images/likes/geodc.png" alt="Geo-DC Meetup">
-      </a>
-      <a href="http://www.qgis.org/" target="_blank" title="QGIS">
-        <img src="images/likes/qgis.png" alt="QGIS">
-      </a>
-      <a href="http://d3js.org/" target="_blank" title="D3.js">
-        <img src="images/likes/d3.svg" alt="D3.js">
-      </a>
-      <a href="https://www.mapbox.com/" target="_blank" title="MapBox">
-        <img src="images/likes/mapbox.png" alt="MapBox">
-      </a>
-      <a href="https://trello.com/" target="_blank" title="Trello">
-        <img src="images/likes/trello.png" alt="Trello">
-      </a>
-      <a href="http://www.adobe.com/" target="_blank" title="Adobe Illustrator">
-        <img src="images/likes/ai.png" alt="Adobe Illustrator">
-      </a>
-    </div>
-    <br>
-
-    <br>
-    <div class="sectionHeader">
-      <h6> Sometimes I make other things. </h6>
-    </div>
-    <!-- artwork, drums -->
-    <div id="things" class="thumbnailGallery">
-      <a href="images/things/mosaic_avocado.jpg" title="text" class="A">
-        <img src="images/things/mosaic_avocado_thumb.jpg" alt="text">
-      </a>
-      <a href="images/things/mosaic_eggplant.jpg" title="text" class="A">
-        <img src="images/things/mosaic_eggplant_thumb.jpg" alt="text">
-      </a>
-      <a href="images/things/mosaic_teapot.jpg" title="text" class="A">
-        <img src="images/things/mosaic_teapot_thumb.jpg" alt="text">
-      </a>
-      <a href="images/things/mosaic_vanitas.jpg" title="text" class="A">
-        <img src="images/things/mosaic_vanitas_thumb.jpg" alt="text">
-      </a>
-      <a href="images/things/yogaScreen.jpg" title="text" class="A">
-        <img src="images/things/yogaScreen_thumb.jpg" alt="text">
-      </a>
-    </div>
-    <div style="margin-bottom: 30px;"></div>
-    <!-- <div class="sectionHeader">
-      <h6> Sometimes I get to do interesting things to collect data. </h6>
-    </div> -->
-
-    <div class="row" style="margin: 0;">
-      <div class="pull-right">             
-        <h6>
-          &copy; Daniel Joseph 2013
-        </h6>
+    <div class="container">
+      <div class="row footerBar" style="margin: 0;">
+        <div class="pull-right">             
+          <h6>
+            &copy; Daniel Joseph 2013
+          </h6>
+        </div>
       </div>
     </div>
 
-  </div> <!-- /container -->
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
-    <script src="js/blueimp-gallery.min.js"></script>
-    <script>
-    document.getElementById('maps').onclick = function (event) {
-      event = event || window.event;
-      var target = event.target || event.srcElement,
-      link = target.src ? target.parentNode : target,
-      options = {index: link, event: event},
-      links = this.getElementsByTagName('a');
-      blueimp.Gallery(links, options);
-    };
-    document.getElementById('things').onclick = function (event) {
-      event = event || window.event;
-      var target = event.target || event.srcElement,
-      link = target.src ? target.parentNode : target,
-      options = {index: link, event: event},
-      links = this.getElementsByTagName('a');
-      blueimp.Gallery(links, options);
-    };
-    </script>
-
   </body>
 </html>
